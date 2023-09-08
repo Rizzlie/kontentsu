@@ -34,6 +34,7 @@ specifiers:
   '@nx/webpack': 16.8.1
   '@nx/workspace': 16.8.1
   '@playwright/test': ^1.36.0
+  '@prisma/client': ^5.2.0
   '@schematics/angular': ~16.2.0
   '@types/jest': ^29.4.0
   '@types/node': ~18.7.1
@@ -50,6 +51,7 @@ specifiers:
   jsonc-eslint-parser: ^2.1.0
   nx: 16.8.1
   prettier: ^2.6.2
+  prisma: ^5.2.0
   reflect-metadata: ^0.1.13
   rxjs: ~7.8.0
   ts-jest: ^29.1.0
@@ -99,6 +101,7 @@ devDependencies:
   '@nx/webpack': 16.8.1_y6fqw3citf6l4jnslorn6h5tty
   '@nx/workspace': 16.8.1
   '@playwright/test': 1.37.1
+  '@prisma/client': 5.2.0_prisma@5.2.0
   '@schematics/angular': 16.2.1
   '@types/jest': 29.5.4
   '@types/node': 18.7.23
@@ -114,6 +117,7 @@ devDependencies:
   jsonc-eslint-parser: 2.3.0
   nx: 16.8.1
   prettier: 2.8.8
+  prisma: 5.2.0
   ts-jest: 29.1.1_onyvhgag3b4sazsljx4ubwol5i
   ts-node: 10.9.1_ucbt5q5xkwutfqgkmfpzi7kgqa
   typescript: 5.1.6
@@ -4198,6 +4202,29 @@ packages:
       playwright-core: 1.37.1
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /@prisma/client/5.2.0_prisma@5.2.0:
+    resolution: {integrity: sha512-AiTjJwR4J5Rh6Z/9ZKrBBLel3/5DzUNntMohOy7yObVnVoTNVFi2kvpLZlFuKO50d7yDspOtW6XBpiAd0BVXbQ==}
+    engines: {node: '>=16.13'}
+    requiresBuild: true
+    peerDependencies:
+      prisma: '*'
+    peerDependenciesMeta:
+      prisma:
+        optional: true
+    dependencies:
+      '@prisma/engines-version': 5.2.0-25.2804dc98259d2ea960602aca6b8e7fdc03c1758f
+      prisma: 5.2.0
+    dev: true
+
+  /@prisma/engines-version/5.2.0-25.2804dc98259d2ea960602aca6b8e7fdc03c1758f:
+    resolution: {integrity: sha512-jsnKT5JIDIE01lAeCj2ghY9IwxkedhKNvxQeoyLs6dr4ZXynetD0vTy7u6wMJt8vVPv8I5DPy/I4CFaoXAgbtg==}
+    dev: true
+
+  /@prisma/engines/5.2.0:
+    resolution: {integrity: sha512-dT7FOLUCdZmq+AunLqB1Iz+ZH/IIS1Fz2THmKZQ6aFONrQD/BQ5ecJ7g2wGS2OgyUFf4OaLam6/bxmgdOBDqig==}
+    requiresBuild: true
     dev: true
 
   /@schematics/angular/16.2.1:
@@ -9687,6 +9714,15 @@ packages:
       '@jest/schemas': 29.6.3
       ansi-styles: 5.2.0
       react-is: 18.2.0
+
+  /prisma/5.2.0:
+    resolution: {integrity: sha512-FfFlpjVCkZwrqxDnP4smlNYSH1so+CbfjgdpioFzGGqlQAEm6VHAYSzV7jJgC3ebtY9dNOhDMS2+4/1DDSM7bQ==}
+    engines: {node: '>=16.13'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@prisma/engines': 5.2.0
+    dev: true
 
   /proc-log/3.0.0:
     resolution: {integrity: sha512-++Vn7NS4Xf9NacaU9Xq3URUuqZETPsf8L4j5/ckhaRYsfPeRyzGw+iDjFhV/Jr3uNmTvvddEJFWh5R1gRgUH8A==}

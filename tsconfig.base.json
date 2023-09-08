@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@kontentsu/data-access-posts": ["libs/data-access-posts/src/index.ts"],
+      "@kontentsu/prisma-client": ["libs/prisma-client/src/index.ts"],
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
